@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assert/boostrap2/bootstrap.min.css" />
+    <title>Booking</title>
+</head>
+<body>
+
+<section class="container-fluid bg-info p-3 ">
+    <h1 class="text-white">Booking Form</h1>
+</section>
+
+<section class="container-fluid">
+<form class="row g-5 mt-3">
+    <div class="col-md-6">
+        <label class="form-label">NIC</label>
+        <input class="form-control" id="bfcustomernic" type="text" placeholder="NIC">
+        <span class="lbl-error" id="lblbfnic"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label class="form-label">Booking ID</label>
+        <input class="form-control" id="bfbookingid" type="text" placeholder="Booking ID">
+        <span class="lbl-error" id="lblbfbookingid"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label class="form-label">Vehicle ID</label>
+        <input class="form-control" id="bfvehicleid" type="text" placeholder="Vehicle ID">
+        <span class="lbl-error" id="lblbfvehicleid"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label class="form-label">Start Location</label>
+        <input class="form-control" id="bfstartlocation" type="text" placeholder="Start Location">
+        <span class="lbl-error" id="lblbfstartlocaation"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label class="form-label">Close Locarion</label>
+        <input class="form-control" id="bfcloselocation" type="text" placeholder="Close Location">
+        <span class="lbl-error" id="lblcloselocation"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label class="form-label">Status</label>
+        <input class="form-control" id="bfstatus" type="text" placeholder="Status">
+        <span class="lbl-error" id="lblbfstatus"></span>
+    </div>
+
+
+    <div class="col-md-6">
+        <label class="form-label">Driver</label>
+        <input class="form-control" id="bfdriver" type="text" placeholder="Yes Or No">
+        <span class="lbl-error" id="lbldriver"></span>
+    </div>
+
+
+    <div class="col-md-6">
+        <label class="form-label">Resite in peyment</label>
+        <input class="form-control" type="file" id="bfpaymentrisite">
+    </div>
+
+
+
+</form>
+
+    <button id="btnbfsubmite" type="button" class="btn btn-primary mt-3">Submit</button>
+    <button id="" type="button"  class="btn btn-danger mt-3">Clear</button>
+
+
+
+</section>
+
+<script src="assert/boostrap/js/bootstrap.min.js"></script>
+<script src="assert/boostrap/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script src="booking/booking.js"></script>
+
+</body>
+</html>

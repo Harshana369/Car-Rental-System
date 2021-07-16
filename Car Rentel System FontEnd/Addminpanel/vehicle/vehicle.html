@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle</title>
+    <link href="../../assert/boostrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <section class="container-fluid bg-info p-3 ">
+        <h1 class="text-white">Vehicle Registation</h1>
+    </section>
+
+
+    <main>
+        <<section >
+        <div class="container">
+                <div class="modal-body">
+                    <form>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>Vehicle Id</label>
+                                        <input  type="text" class="form-control" id="vehicleid" aria-describedby="emailHelp" placeholder="Enter Vehicle Id">
+                                        <span class="lbl-error" id="lblvehicleid"></span>
+                                    </div>
+
+                                    <button id="btnvdelete" type="button"  class="btn btn-danger mt-3">Delete</button>
+
+                                    <div class="form-group mt-4">
+                                        <label>Brand</label>
+                                        <input type="text" class="form-control" id="brand" aria-describedby="emailHelp" placeholder="Enter Brand">
+                                        <span class="lbl-error" id="lblbrand"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Color</label>
+                                        <input type="text" class="form-control" id="color" placeholder="Enter Color">
+                                        <span class="lbl-error" id="lblcolor"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label >No Of Passengers</label>
+                                        <input type="text" class="form-control" id="noofpassengers" placeholder="Enter No Of Passengers">
+                                        <span class="lbl-error" id="lblnoofpassengers"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Transmission Type</label>
+                                        <input type="text" class="form-control" id="transtype" placeholder="Enter Transmission Type">
+                                        <span class="lbl-error" id="lbltranstype"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label >Fuel Type</label>
+                                        <input type="text" class="form-control" id="fueltype" placeholder="Enter Fuel Type">
+                                        <span class="lbl-error" id="lblfueltype"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Dailty Price</label>
+                                        <input type="text" class="form-control" id="dailyprice" placeholder="Enter Dailty Price">
+                                        <span class="lbl-error" id="lbldailyprice"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Monthly Price</label>
+                                        <input type="text" class="form-control" id="monthlyprice" placeholder="Enter Monthly Price">
+                                        <span class="lbl-error" id="lblmonthlyprice"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Extra Km Price</label>
+                                        <input type="text" class="form-control" id="extrakmprice" placeholder="Enter Extra Km Price">
+                                        <span class="lbl-error" id="lblextrakmprice"></span>
+                                    </div>
+
+
+                                </div>
+                                <div class="col">
+
+
+                                    <div class="form-group">
+                                        <label>Type</label>
+                                        <input type="text" class="form-control" id="type" placeholder="Enter Type">
+                                        <span class="lbl-error" id="lbltype"></span>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label>Dayly Free Km</label>
+                                        <input type="text" class="form-control" id="daylyfreekm" placeholder="Enter Dayly Free Km">
+                                        <span class="lbl-error" id="lbldaylyfreekm"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Monthly Free Km</label>
+                                        <input type="text" class="form-control" id="monthlyfreekm" placeholder="Enter Monthly Free Km">
+                                        <span class="lbl-error" id="lblmonthlyfreekm"></span>
+
+                                   </div>
+
+
+                                    <div class="mb-3">
+                                        <label for="frontimage" class="form-label">Front image</label>
+                                        <input class="form-control" type="file" id="frontimage">
+
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <label for="backimage" class="form-label">Back image</label>
+                                        <input class="form-control" type="file" id="backimage">
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <label for="leftimage" class="form-label">Left image</label>
+                                        <input class="form-control" type="file" id="leftimage">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="rightimage" class="form-label">Right Image</label>
+                                        <input class="form-control" type="file" id="rightimage">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="btnvclear" type="button" class="btn btn-secondary" data-dismiss="modal">Clear</button>
+                    <button id="btnvupdate" type="button"  class="btn btn-warning">Update</button>
+                    <button id="btnvall" type="button" class="btn btn-dark mt-3">All Vrhicle</button>
+                    <button id="btnvsave" type="button" class="btn btn-primary">Save</button>
+                </div>
+
+            <div class="col">
+                <table class="table table-bordered table-hover">
+                    <thead class="bg-danger text-white">
+                    <tr>
+                        <th>Vehicle Id</th>
+                        <th>Brand</th>
+                        <th>Type</th>
+                        <th>Color</th>
+                        <th>Transmission Type</th>
+                        <th>No Of Pasenger</th>
+                        <th>Fuel Type</th>
+                        <th>Exter Km Price</th>
+                        <th>Dayly Price</th>
+                        <th>Dayly Free Km</th>
+                        <th>Monthly Price</th>
+                        <th>Monthly Free Km</th>
+
+
+                        <!--                <th>Font Image</th>-->
+                        <!--                <th>Left Image</th>-->
+                        <!--                <th>Right Image</th>-->
+                        <!--                <th>Back Image</th>-->
+
+                    </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+
+
+
+                    </tbody>
+                </table>
+
+
+                <label id="tlable">
+
+
+                </label>
+
+
+            </div>
+
+
+        </div>
+    </section>
+    </main>
+
+    <script src = "../../assert/boostrap/jquery-3.6.0.min.js"></script>
+    <script src ="../../assert/boostrap/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <script src="vehicle.js"></script>
+
+</body>
+</html>

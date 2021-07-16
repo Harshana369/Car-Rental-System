@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assert/boostrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Registation</title>
+</head>
+
+<style>
+
+
+</style>
+
+
+<body>
+
+  <section class="container-fluid bg-info p-3 ">
+    <h1 class="text-white">Customer Registation</h1>
+</section>
+
+
+
+<section class="container-fluid mt-3">  
+   <form id="frmCustomerReg">
+     <div class="row">
+          <div class="col-md-6">
+            <div>
+                <label class="form-label">NIC</label>
+                <input class="form-control" id="customernic" type="text" placeholder="Enter Type">
+                <span class="lbl-error" id="lblnic"></span>
+            </div>
+
+
+          <!-- driven lice pto -->
+            <div class="mb-3">
+                <label class="form-label">Driven licen Photo</label>
+                 <input class="form-control" type="file" id="drivinlicen">
+            </div>
+
+
+
+            <div>
+                <label class="form-label" >Email</label>
+                <input class="form-control" id="customeremail" type="email" placeholder="Enter Type">
+                <span class="lbl-error" id="lblemail"></span>
+            </div>
+
+              <div>
+                  <label class="form-label" >Address</label>
+                  <input class="form-control" id="customeraddress" type="text" placeholder="Enter Type">
+                  <span class="lbl-error" id="lbladdress"></span>
+              </div>
+
+
+          </div>
+
+          <div class="col-md-6">                       
+            <div>
+                <label class="form-label">Name </label>
+                <input class="form-control" id="customername" type="text" placeholder="Enter Type">
+                <span class="lbl-error" id="lblname"></span>
+            </div>
+
+            
+            <div>
+              <label class="form-label">Phone Number</label>
+              <input class="form-control" id="customerphone" type="" placeholder="Enter Type">
+                <span class="lbl-error" id="lblphn"></span>
+            </div>
+
+
+              <div>
+                  <label class="form-label" >Password</label>
+                  <input class="form-control" id="customerpassword" type="password" placeholder="Enter Type">
+                  <span class="lbl-error" id="lblpassword"></span>
+              </div>
+
+
+          </div>
+      </div>
+        
+                <div class="btn-group mb-3 mt-3 ">
+                    <button class="btn btn-primary" id="btncustomersave" type="button">Register Customer</button>
+                
+                   <a href="../index.html">
+                    <button class="btn btn-danger" id="btnCancle" type="button">Cansal</button>
+                  </a>
+                  </div>
+      
+            </form>
+        </section>
+        <section class="col-md-12 ">
+<!--            <table class="table table-hover table-bordered">-->
+<!--                <thead class="bg-danger text-white">-->
+<!--                <tr>-->
+<!--                    <th>Nic</th>-->
+<!--                    <th>Driver licen No</th>-->
+<!--                    <th>Driver licen Photo</th>-->
+<!--                    <th>Email</th>-->
+<!--                    <th>location Stop</th>-->
+<!--                    <th>Name</th>-->
+<!--                    <th>Nic Photo</th>-->
+<!--                    <th>Locstio Start</th>-->
+<!--                    <th>Password</th>-->
+<!--                    <th>Phone No</th>-->
+<!--                </tr>-->
+<!--                </thead>-->
+<!--                <tbody id="tBody">-->
+
+<!--                </tbody>-->
+<!--            </table>-->
+    </section>
+</section>
+
+      <script src="../assert/boostrap/js/jquery-3.6.0.min.js"></script>
+      <script src="../assert/boostrap/jquery-3.6.0.min.js"></script>
+    <script src="customer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+
+      <script>
+
+
+      </script>
+</section>
+</body>
+</html>
